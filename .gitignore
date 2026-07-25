@@ -1,0 +1,75 @@
+# ===========================
+# Build output
+# ===========================
+bin/
+dist/
+build/
+out/
+
+# Executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Coverage reports
+*.out
+coverage.out
+coverage.html
+
+# Go workspace
+go.work
+go.work.sum
+
+# Vendor (uncomment if you don't commit dependencies)
+# vendor/
+
+# ===========================
+# IDEs
+# ===========================
+.vscode/
+.idea/
+*.iml
+
+# ===========================
+# OS files
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Environment
+# ===========================
+.env
+.env.*
+!.env.example
+
+# ===========================
+# Logs
+# ===========================
+*.log
+
+# ===========================
+# Temporary files
+# ===========================
+tmp/
+temp/
+.cache/
+
+# ===========================
+# JetBrains
+# ===========================
+*.ipr
+*.iws
+
+# ===========================
+# GoLand
+# ===========================
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/shelf
