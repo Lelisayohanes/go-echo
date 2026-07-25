@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/Lelisayohanes/fms-ingo/peer2peer"
+)
 
 func main() {
 	// Your code here
-	fmt.Println("Hello, World!")
+	tr := peer2peer.NewTCPTransport(":3000")
+
+	if err := tr.ListenAndAccept(); err != nil {
+		log.Fatal(err)
+	}
+
+	select {}
+
 }

@@ -13,4 +13,6 @@ func testTCPTransport(t *testing.T) {
 
 	//Server
 	assert.Nil(t, transport.ListenAndAccept())
+
+	select {}
 }
