@@ -73,3 +73,5 @@ temp/
 .idea/**/tasks.xml
 .idea/**/dictionaries
 .idea/**/shelf
+
+go-echo

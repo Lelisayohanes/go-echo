@@ -1,0 +1,12 @@
+go echo - golang framework 
+
+pgx - database drivers 
+
+zero log - logging library
+
+viper - config management 
+
+add linter for golang
+
+task file / make file
+
