@@ -17,7 +17,8 @@ type Config struct {
 	Database      DatabaseConfig       `koanf:"database" validate :"required"`
 	Auth          AuthConfig           `koanf:"auth" validate :"required"`
 	Redis         RedisConfig          `koanf:"redis_config" validate :"required"`
-	Observability *ObservabilityConfig `koanf:"observabiltyg"`
+	Observability *ObservabilityConfig `koanf:"observability"`
+	Integration   *IntegrationConfig   `koanf:"integration"`
 }
 
 type Primary struct {
@@ -47,6 +48,10 @@ type DatabaseConfig struct {
 
 type RedisConfig struct {
 	Address string `koanf:"address" validate :"required"`
+}
+
+type IntegrationConfig struct {
+	ResendAPIKey string `koanf:"resend_api_keuy" validate :"required"`
 }
 type AuthConfig struct {
 	SecretKey string `koanf:"secret_key" validate :"required"`
